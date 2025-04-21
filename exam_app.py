@@ -49,7 +49,7 @@ st.markdown(
 # Load Excel from the same directory
 @st.cache_data
 def load_questions():
-    xls = pd.ExcelFile("Dynamic leadership Inventory.xlsm")
+    xls = pd.ExcelFile("Dynamic leadership.xlsm")
     all_parts = []
     for i in range(1, 7):
         part_df = pd.read_excel(xls, sheet_name=f"PART {i}")
